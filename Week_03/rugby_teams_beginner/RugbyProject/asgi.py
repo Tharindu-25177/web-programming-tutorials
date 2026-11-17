@@ -1,4 +1,5 @@
 import os
 from django.core.asgi import get_asgi_application
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'rugby_teams.settings')
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "RugbyProject.settings")
 application = get_asgi_application()
