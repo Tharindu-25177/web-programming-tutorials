@@ -1,0 +1,107 @@
+/* Basic page design */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    color: #222;
+}
+
+header {
+    background-color: #243447;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #243447;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #e49b24;
+    color: #222;
+    border: none;
+    padding: 11px 18px;
+    margin-top: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc8413;
+}
+
+.error {
+    color: #c62828;
+    font-weight: bold;
+}
+
+.result {
+    background-color: #e8f3e9;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #777;
+}
+
+footer {
+    background-color: #243447;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Small screen design */
+@media (max-width: 500px) {
+    main {
+        width: 94%;
+    }
+
+    .box {
+        padding: 15px;
+    }
+}

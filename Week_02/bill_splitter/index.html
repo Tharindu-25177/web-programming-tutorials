@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bill Splitter</h1>
+        
+    </header>
+
+    <main>
+        <!-- TASK 1: BILL SPLITTER -->
+        <section class="box">
+            <h2> Bill Splitter</h2>
+
+            <label for="billAmount">Total bill amount (Rs.)</label>
+            <input type="number" id="billAmount" placeholder="Enter bill amount">
+
+            <label for="tipRate">Tip percentage</label>
+            <select id="tipRate">
+                <option value="0">0%</option>
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+            </select>
+
+            <label for="people">Number of people</label>
+            <input type="number" id="people" placeholder="Enter number of people">
+
+            <button type="button" id="splitButton">Calculate Bill</button>
+            <p id="billError" class="error"></p>
+            <div id="billResult" class="result"></div>
+        </section>
+
+        <!-- TASK 2: MENU ITEMS -->
+        <section class="box">
+            <h2>Menu Items</h2>
+
+            <label for="itemName">Menu item name</label>
+            <input type="text" id="itemName" placeholder="Example: Rice">
+
+            <label for="itemPrice">Item price (Rs.)</label>
+            <input type="number" id="itemPrice" placeholder="Enter item price">
+
+            <button type="button" id="addButton">Add Item</button>
+            <p id="itemError" class="error"></p>
+
+            <h3>Items List</h3>
+            <ul id="itemList"></ul>
+
+            <p><strong>Total Bill: Rs. <span id="menuTotal">0.00</span></strong></p>
+
+            <label for="menuTip">Tip percentage</label>
+            <select id="menuTip">
+                <option value="0">0%</option>
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+            </select>
+
+            <label for="menuPeople">Number of people</label>
+            <input type="number" id="menuPeople" placeholder="Enter number of people">
+
+            <button type="button" id="menuSplitButton">Split Menu Bill</button>
+            <p id="menuSplitError" class="error"></p>
+            <div id="menuResult" class="result"></div>
+        </section>
+
+        <!-- TASK 3: TODO LIST -->
+        <section class="box">
+            <h2>ToDo List</h2>
+
+            <label for="todoInput">Enter a task</label>
+            <input type="text" id="todoInput" placeholder="Example: Complete homework">
+
+            <button type="button" id="todoButton">Add Task</button>
+            <p id="todoError" class="error"></p>
+
+            <ul id="todoList"></ul>
+        </section>
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

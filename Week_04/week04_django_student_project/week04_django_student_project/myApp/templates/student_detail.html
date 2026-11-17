@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Student Details - My University{% endblock %}
+{% block content %}
+<div class="panel">
+<h2>{{ student.firstName }} {{ student.lastName }}</h2>
+<p><strong>Student ID:</strong> {{ student.id }}</p>
+<p><strong>Age:</strong> {{ student.age }}</p>
+<p><strong>Email:</strong> {{ student.email|default:"Not provided" }}</p>
+<p><strong>Enrolment date:</strong> {{ student.enrolmentDate|date:"d M Y" }}</p>
+<h3>Enrolled Modules</h3>
+<ul>{% for module in student.modules.all %}
+<li>{{ module.code|upper }} - {{ module.name|capfirst }}</li>
+{% empty %}<li>This student is not enrolled in any modules.</li>
+{% endfor %}</ul>
+<a href="{% url 'home' %}">← Back to students</a>
+</div>
+{% endblock %}

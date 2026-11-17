@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Home - My University{% endblock %}
+{% block content %}
+<div class="panel">
+<h2>Students</h2><p>Select a student to see their details.</p>
+{% if students %}
+<ul>{% for student in students %}
+<li><a href="{% url 'student_detail' student.id %}">{{ student.firstName|capfirst }} {{ student.lastName|upper }}</a></li>
+{% endfor %}</ul>
+{% else %}<p>No students have been added yet. Add students through the Admin page.</p>{% endif %}
+</div>
+{% endblock %}

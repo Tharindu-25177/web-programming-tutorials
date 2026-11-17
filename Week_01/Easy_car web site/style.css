@@ -1,0 +1,85 @@
+/* Simple CSS for both pages */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Home page welcome section */
+.welcome {
+    background-color: #ddd;
+    text-align: center;
+    padding: 35px 10px;
+}
+
+.heading {
+    text-align: center;
+}
+
+/* Car columns */
+.cars {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.car {
+    background-color: white;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+.car img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* About page */
+.about {
+    background-color: white;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    min-height: 250px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+    .cars {
+        flex-direction: column;
+    }
+
+    .car {
+        width: auto;
+    }
+
+    .about {
+        margin: 15px;
+    }
+}
